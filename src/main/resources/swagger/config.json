@@ -1,0 +1,12 @@
+{
+  "artifactId": "momo-data-service",
+  "basePackage": "com.momo.data",
+  "apiPackage": "com.momo.data.api",
+  "configPackage": "com.momo.data.config",
+  "modelPackage": "com.momo.data.model",
+  "delegatePattern": "true",
+  "hideGenerationTimestamp": "true",
+  "useBeanValidation": "true",
+  "dateLibrary": "joda",
+  "sourceFolder": "generated-sources/src/main/java"
+}
