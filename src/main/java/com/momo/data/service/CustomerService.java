@@ -10,12 +10,12 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 @Service
-public class UserService {
+public class CustomerService {
 
     @Autowired
     private UserRepository repository;
 
-    public List<String> getUsers() {
+    public List<String> getCustomers() {
         return Arrays.asList(countDown());
     }
 
@@ -23,7 +23,7 @@ public class UserService {
         try {
             long start = System.currentTimeMillis();
             CountDownLatch countDownLatch = new CountDownLatch(15);
-            countDownLatch.await(3L, TimeUnit.SECONDS);
+            countDownLatch.await(10L, TimeUnit.SECONDS);
             return String.valueOf(System.currentTimeMillis() - start);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
